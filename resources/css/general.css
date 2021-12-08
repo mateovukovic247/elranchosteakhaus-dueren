@@ -37,13 +37,25 @@ body {
 }
 
 /****************************
-    **** HEADINGS
-    *****************************/
+**** SECTIONS
+*****************************/
 
-.heading-primary {
+.section {
+  padding: 9.6rem 0 0 0;
+}
+
+/****************************
+**** HEADINGS
+*****************************/
+
+.heading-primary,
+.heading-secondary {
   font-weight: 700;
   letter-spacing: -0.5px;
   text-transform: uppercase;
+}
+
+.heading-primary {
   font-size: 5.2rem;
   line-height: 1.05;
 }
@@ -52,9 +64,27 @@ body {
   color: #fff;
 }
 
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+}
+
+.heading-secondary--grey {
+  color: #333;
+}
+
 /****************************
-    **** BUTTONS
-    *****************************/
+**** TEXT
+*****************************/
+
+.description-text {
+  text-transform: uppercase;
+  line-height: 1.8;
+}
+
+/****************************
+**** BUTTONS
+*****************************/
 
 .btn:link,
 .btn:visited {
@@ -88,9 +118,37 @@ body {
 }
 
 /****************************
-    **** UTILITIES
-    *****************************/
+**** LAYOUT
+*****************************/
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/****************************
+**** UTILITIES
+*****************************/
+
+.margin-bottom--small {
+  margin-bottom: 1.6rem !important;
+}
 
 .margin-bottom--medium {
   margin-bottom: 3.2rem !important;
+}
+
+.margin-bottom--large {
+  margin-bottom: 6.4rem !important;
 }
