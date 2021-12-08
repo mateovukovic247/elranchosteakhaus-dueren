@@ -9,8 +9,10 @@ STYLE SYSTEM
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 - Colors
-main: #dc2201, tints: #fce9e6, shades: #c61f01,
-greys: #555, #fff
+main: #dc2201, tints: #fce9e6, #e34e34, shades: #c61f01, #420a00
+secondary: #ffa11d, shades: #e6911a
+tertiary: #ffd43b, shades: #e6bf35
+greys: #555, #fff, #aaa
 
 */
 
