@@ -250,3 +250,20 @@
   background-color: #fff;
   color: #555;
 }
+
+/***********************************
+***** FOOTER
+************************************/
+
+.footer {
+  padding: 6.4rem 0 0 0;
+  font-size: 1.6rem;
+}
+
+.footer__link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  cursor: pointer;
+}
