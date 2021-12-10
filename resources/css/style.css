@@ -287,6 +287,21 @@
   color: #555;
 }
 
+.form__spinner {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__response {
+  margin-top: 1.2rem;
+  line-height: 1.2;
+}
+
+.form__response--succes {
+  color: #fff;
+}
+
 /***********************************
 ***** FOOTER
 ************************************/
