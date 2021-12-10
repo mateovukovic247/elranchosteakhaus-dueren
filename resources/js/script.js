@@ -4,6 +4,9 @@ const headerEl = document.querySelector('.header');
 const navbarEl = document.querySelector('.navbar');
 const navbarBtnEl = document.querySelector('.navbar__btn');
 const linksEl = document.querySelectorAll('a:link');
+const formEl = document.querySelector('.form');
+const formSpinnerEl = document.querySelector('.form__spinner');
+const formResponseEl = document.querySelector('.form__response');
 
 // Toggle navigation state
 const toggleNavState = function () {
@@ -62,6 +65,39 @@ const scrollLinks = function () {
 };
 
 scrollLinks();
+
+// Handle form submit
+
+const handleFormSubmit = function () {
+  formEl.addEventListener('submit', function (event) {
+    event.preventDefault();
+    formSpinnerEl.style.display = 'flex';
+    const data = new FormData(event.target);
+    fetch(formEl.action, {
+      method: formEl.method,
+      body: data,
+      headers: {
+        Accept: 'application/json',
+      },
+    })
+      .then(response => {
+        formResponseEl.textContent =
+          'Ihre Nachricht wurde erfolgreich gesendet!';
+        formResponseEl.classList.add('form__response--succes');
+        formEl.reset();
+      })
+      .catch(error => {
+        formResponseEl.textContent =
+          'Etwas ist schiefgelaufen, versuchen Sie es in einigen Momenten erneut!';
+        formResponseEl.classList.remove('form__response--succes');
+      })
+      .finally(() => {
+        formSpinnerEl.style.display = 'none';
+      });
+  });
+};
+
+handleFormSubmit();
 
 // GLightbox
 const lightbox = GLightbox();
