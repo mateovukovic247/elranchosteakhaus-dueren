@@ -485,3 +485,25 @@
     color: #420a00;
   }
 }
+
+/****************************
+**** FLEXBOX GAP FIX
+*****************************/
+
+.no-flexbox-gap .navbar__main ul li:not(:last-child) {
+  margin-right: 3.2rem;
+}
+
+@media (max-width: 46.8em) {
+  .no-flexbox-gap .navbar__main ul li:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.no-flexbox-gap .meal__attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .form__group:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
