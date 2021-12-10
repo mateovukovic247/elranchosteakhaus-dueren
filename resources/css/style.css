@@ -78,6 +78,24 @@
   display: none;
 }
 
+/* STICKY */
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.sticky .navbar__icon,
+.sticky .navbar__link:link,
+.sticky .navbar__link:visited {
+  color: #333;
+}
+
 /***********************************
 ***** SECTION ABOUT
 ************************************/
