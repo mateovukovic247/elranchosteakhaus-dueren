@@ -25,6 +25,12 @@
       defer
     ></script>
 
+    <!-- Smooth Scrolling polyfill js -->
+    <script
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+      defer
+    ></script>
+
     <!-- EXTERNAL CSS -->
     <link rel="stylesheet" href="./vendors/css/fontawesome.css" />
 
@@ -49,22 +55,27 @@
         <nav class="navbar__main">
           <ul>
             <li>
-              <a href="#" class="navbar__link">Über uns</a>
+              <a href="#section-about" class="navbar__link">Über uns</a>
             </li>
             <li>
-              <a href="#" class="navbar__link">Fotogalerie</a>
+              <a href="#section-gallery" class="navbar__link">Fotogalerie</a>
             </li>
             <li>
-              <a href="#" class="navbar__link">Speisekarte</a>
+              <a href="#section-menu" class="navbar__link">Speisekarte</a>
             </li>
             <li>
-              <a href="#" class="navbar__link">Anfahrt</a>
+              <a href="#section-approach" class="navbar__link">Anfahrt</a>
             </li>
             <li>
-              <a href="#" class="navbar__link">Kontakt</a>
+              <a href="#section-contact" class="navbar__link">Kontakt</a>
             </li>
             <li>
-              <a href="#" class="navbar__link">Impressum</a>
+              <a
+                href="./resources/attachment/impressum.pdf"
+                target="_blank"
+                class="navbar__link"
+                >Impressum</a
+              >
             </li>
           </ul>
         </nav>
@@ -81,16 +92,16 @@
         >
           EL RANCHO Steakhaus<br />Ihr Steakhaus in Düren
         </h1>
-        <a href="#" class="btn btn--primary header__btn-spacing"
+        <a href="#section-menu" class="btn btn--primary header__btn-spacing"
           >Ich bin hungrig</a
         >
-        <a href="#" class="btn btn--reverse">Zeig mir mehr</a>
+        <a href="#section-gallery" class="btn btn--reverse">Zeig mir mehr</a>
       </div>
     </header>
 
     <main>
       <!-- SECTION ABOUT-->
-      <section class="section">
+      <section class="section" id="section-about">
         <div class="container margin-bottom--large">
           <h2
             class="
@@ -152,7 +163,7 @@
       </section>
 
       <!-- SECTION GALLERY-->
-      <section class="section">
+      <section class="section" id="section-gallery">
         <div class="gallery">
           <a
             href="./resources/img/gallery/gallery-1.jpg"
@@ -314,7 +325,7 @@
       </section>
 
       <!-- SECTION MENU-->
-      <section class="section">
+      <section class="section" id="section-menu">
         <div class="container margin-bottom--large">
           <h2
             class="
@@ -438,7 +449,7 @@
       </section>
 
       <!-- SECTION APPROACH -->
-      <section class="section">
+      <section class="section" id="section-approach">
         <div class="container margin-bottom--large">
           <h2
             class="
@@ -465,7 +476,7 @@
       </section>
 
       <!-- SECTION CONTACT-->
-      <section class="section">
+      <section class="section" id="section-contact">
         <div class="container margin-bottom--large">
           <h2
             class="
